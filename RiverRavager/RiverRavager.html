@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/GamePage.css">
+
+    <!-- Overides the background image depending on game -->
+    <style>
+        .background {
+            background-image: url("/RiverRavager/RiverRavagerScreenshot.png");
+            background-repeat: round;
+        }
+    </style>
+
+    <title> River Ravager</title>
+
+    <!-- Unity stuff -->
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        UnityLoader.instantiate("unityContainer", "Build/Build04.json");
+    </script>
+
+
+</head>
+
+<body>
+    <header id="top">
+        <div class="homeButton">
+            <a href="/index.html">
+                <button> Home </button>
+            </a>
+        </div>
+        <h1 class="title"> River Ravager </h1>
+    </header>
+
+    <div class="main">
+        <div class="background">
+            <div class="colorOverlay"> </div>
+        </div>
+
+        <div class="game">
+            <div id="unityContainer" style="width: 900px; height: 600px;"></div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="description">
+            <h1> River Ravager </h1> <br> <br>
+
+            <div class="stats">
+                <div class="stat">
+                    <p> April 2021 </p>
+                </div>
+                <div class="stat">
+                    <p> Arcade </p>
+                </div>
+                <div class="stat">
+                    <p> Unity </p>
+                </div>
+            </div>
+
+            <br> <br>
+
+            <p> You’re searching for treasure. It’s rumored to be at the heart of the jungle. But it gets more and more
+                dangerous as you penetrate deeper into the wilderness.
+
+                <br> <br>
+                Made in 48 hours for Ludum Dare 48. Theme: Deeper and deeper.
+
+                <br> <br>
+                Controls:
+
+                WASD to move, SPACE to jump, MOUSE to shoot, M to mute
+            </p>
+        </div>
+
+        <div class="links">
+            <ul>
+                <lh> Links </lh> <br>
+                <li> <a href="https://www.newgrounds.com/portal/view/791001" target="_blank">
+                        Newgrounds (Game) </a>
+                </li>
+                <li> <a href="https://patale.itch.io/river-ravager" target="_blank">
+                        itch.io (Game) </a>
+                </li>
+                <li> <a href="https://ldjam.com/events/ludum-dare/48/river-ravager" target="_blank">
+                        Ludum dare 48 (Game Jam) </a>
+                </li>
+                <li> <a href="https://github.com/PatAleJr/RiverRavager" target="_blank">
+                        GitHub (Source Code) </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h3> O: Games </h3>
+        <br>
+        <p> Brought to you by PatAle</p> <br>
+        <p> &copy; 2021 </p> <br>
+    </footer>
+
+</body>
+
+</html>

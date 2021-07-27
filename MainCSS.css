@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    
+    --lighterColor: rgb(142, 232, 255);
+    --darkColor: rgb(3, 50, 65);
+    --lightColor: rgb(48, 207, 247);
+    --darkerColor: rgb(2, 30, 41); 
+
+    --panelWidth: 300px;
+    --panelHeight: 320px;
+
+    box-sizing: border-box;
+}
+
+.heading{
+
+    display: flex;
+
+    height: 150px;
+    width: 100%;
+    background: var(--lightColor);
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    word-spacing: 0.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: var(--darkColor);
+
+    border-bottom: 8px solid var(--darkColor);
+    
+}
+
+.gamesBackground{
+    width:100%;
+    height:calc(100vh - 150px);
+    background:url("./TheJanitorGame/JanitorIconGameJolt.png");
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+.main{
+    width:100%;
+    height: 1000px;
+    background:var(--lightColor);
+
+    border-top: 8px solid var(--darkColor);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    padding:30px;
+}
+
+.panel{
+    /* Distance between other game things */
+    margin: 30px; 
+    /* Distance between edges and elements inside */
+    padding: 15px;
+
+    width: var(--panelWidth);
+    height: var(--panelHeight);
+
+    background: var(--lighterColor);
+    border: 4px solid var(--darkColor);
+    border-radius: 1em;
+
+    display: inline-block;
+
+    box-shadow: 4px -4px 10px var(--darkColor);
+
+    transition: all 0.2s ease;
+
+    text-decoration:none;
+    color: black;
+}
+
+.panel:hover{
+    transform: scale(1.1);
+}
+
+.gameImage {
+    border-radius: 1em;
+    box-sizing: border-box;
+    border: 3px solid var(--darkColor);
+    
+    width:260px;
+    height: 200px;
+}
+
+.gameTitle{
+    margin: 5px;
+    text-align: center;
+}
+
+.footer{
+    box-sizing: border-box;
+    padding: 30px;
+
+    height:300px;
+    background: var(--darkColor);
+
+    border-top: 8px solid black;
+
+    color: white;
+}
+
+.footer a {
+    color:var(--lighterColor);
+}
+.footer a:hover{
+    text-decoration: none;
+    color: var(--lightColor);
+}

@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    
+    --lighterColor: rgb(142, 232, 255);
+    --darkColor: rgb(3, 50, 65);
+    --lightColor: rgb(48, 207, 247);
+    --darkerColor: rgb(2, 30, 41); 
+    --linkColor: rgb(133, 53, 0);
+
+    --headingHeight: 150px;
+    --footerHeight: 200px;
+    --infoHeight: 500px;
+
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    position:relative;
+
+    height: var(--headingHeight);
+    width: 100%;
+    background: var(--lightColor);
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    word-spacing: 0.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: var(--darkColor);
+
+    border-bottom: 8px solid var(--darkColor);
+}
+
+/* must have z-index higher than title */
+.homeButton{
+    display: inline-block;
+    width:15%;
+    z-index:5;
+}
+
+.title{
+    display: inline-block;
+    width:80%;
+    transform: translate(calc(20% / -2));
+}
+
+
+button {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin: 0;
+
+    border: 4px solid var(--darkColor);
+    background: var(--lighterColor);
+    border-radius: 1rem;
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--darkerColor);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+button:hover,
+button:focus {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(1);
+}
+
+.main{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+
+.background{
+    background-attachment: fixed;
+
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index: 0;
+}
+
+.colorOverlay{
+    background: rgba(0,0,0,0.8);
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+body{
+    text-align: center;
+}
+
+.game{
+    display: inline-block;
+    margin:auto;
+    margin-top:3%;
+    position:relative;
+
+    text-align: center;
+}
+
+.info{
+    height: var(--infoHeight);
+    background-color: var(--lightColor);
+    border-top: 8px solid var(--darkerColor);
+    padding:30px;
+
+    position:relative;
+    display:flex;
+
+    color:var(--darkerColor);
+}
+
+.description{
+    display:inline-block;
+    width: 70%;
+    text-align: left;
+    position:relative;
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.stats{
+    display:flex;
+}
+.stat{
+    width:33%;
+    font-weight: bold;
+}
+
+.links{
+    display:inline-block;
+    width:30%;
+
+    text-align: left;
+    list-style-position: inside;
+    line-height: 2em;
+}
+.links lh {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+footer{
+    height: var(--footerHeight);
+    background: var(--darkColor);
+
+    padding: 30px;
+    border-top: 8px solid var(--darkerColor);
+
+    color: white;
+    text-align: left;
+        font-size: 1em;
+}
+footer p {
+    font-size: 1em;
+}

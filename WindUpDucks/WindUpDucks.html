@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/GamePage.css">
+
+    <!-- Overides certain properties depending on game -->
+    <style>
+        .background {
+            background-image: url("/WindUpDucks/Screenshot1.png");
+            background-size: cover;
+        }
+    </style>
+
+    <title> Lost In the Woods </title>
+
+
+    <!-- Unity stuff -->
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        UnityLoader.instantiate("unityContainer", "Build/Web05.json");
+    </script>
+
+</head>
+
+<body>
+
+    <header id="top">
+        <div class="homeButton">
+            <a href="/index.html">
+                <button> Home </button>
+            </a>
+        </div>
+        <h1 class="title"> Wind-Up Ducks </h1>
+    </header>
+
+    <div class="main">
+        <div class="background">
+            <div class="colorOverlay"> </div>
+        </div>
+
+        <div class="game">
+            <div id="unityContainer" style="width: 640px; height: 360px"></div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="description">
+            <h1> Wind-Up Ducks </h1> <br> <br>
+
+            <div class="stats">
+                <div class="stat">
+                    <p> August 2020 </p>
+                </div>
+                <div class="stat">
+                    <p> Arcade </p>
+                </div>
+                <div class="stat">
+                    <p> Unity </p>
+                </div>
+            </div>
+
+            <br> <br>
+
+            <p>
+                Command your ducks to fight enemies. Move with arrows. Wind them up by holding the space bar, awaken
+                them with z and put them to sleep with x.
+                <br> <br>
+                Tips:
+                <br>
+                While the ducks are asleep you can push them around. Then awaken them so they attack the enemies close
+                to them.
+                Sleeping ducks deplete their energy much slower than awake ones.
+                <br> <br>
+                Music: Casual Game BGM by B.G.M on the Unity Asset Store
+            </p>
+        </div>
+
+        <div class="links">
+            <ul>
+                <lh> Links </lh> <br>
+                <li> <a href="https://www.newgrounds.com/portal/view/764117" target="_blank">
+                        Newgrounds (Game) </a>
+                </li>
+                <li> <a href="https://patale.itch.io/wind-up-ducks" target="_blank">
+                        itch.io (Game) </a>
+                </li>
+                <li> <a href="https://itch.io/jam/brackeys-4/rate/724218" target="_blank"> itch.io (Game Jam
+                        Submission)</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h3> O: Games </h3>
+        <br>
+        <p> Brought to you by PatAle</p> <br>
+        <p> &copy; 2021 </p> <br>
+    </footer>
+
+
+</body>
+
+</html>
