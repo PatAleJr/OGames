@@ -12,6 +12,7 @@
     --infoHeight: 500px;
 
     box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
@@ -28,7 +29,6 @@ header{
 
     font-size: 2.5rem;
     word-spacing: 0.2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: var(--darkColor);
 
@@ -61,7 +61,6 @@ button {
     text-align: center;
     text-decoration: none;
     color: var(--darkerColor);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.5rem;
 
     cursor: pointer;
@@ -167,7 +166,8 @@ footer{
 
     color: white;
     text-align: left;
-        font-size: 1em;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 footer p {
     font-size: 1em;

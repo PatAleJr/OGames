@@ -10,6 +10,8 @@
     --panelHeight: 320px;
 
     box-sizing: border-box;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .heading{
@@ -26,7 +28,6 @@
 
     font-size: 2.5rem;
     word-spacing: 0.2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: var(--darkColor);
 
@@ -59,8 +60,6 @@
     height: 900px;
     background:var(--lightColor);
     border-top: 8px solid var(--darkColor);
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     padding:30px;
 }
@@ -125,6 +124,8 @@
     background: var(--darkColor);
     border-top: 8px solid var(--darkerColor);
     color: white;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer a {
