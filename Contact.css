@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    
+    --lighterColor: rgb(215, 247, 255);
+    --darkColor: rgb(3, 50, 65);
+    --lightColor: rgb(119, 220, 245);
+    --darkerColor: rgb(2, 30, 41); 
+
+    box-sizing: border-box;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+
+    height: 20vh;
+    width: 100%;
+
+    background: var(--darkColor);
+    color: var(--lighterColor);
+    
+    border-bottom: 8px solid var(--darkerColor);
+
+    font-size: 2.5rem;
+    word-spacing: 0.2rem;
+
+    display:flex;
+    position: relative;
+
+    text-align: center;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.main{
+    width:100%;
+
+    background:var(--lightColor);
+
+    padding:30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    padding: 30px;
+
+    background: var(--darkColor);
+    border-top: 8px solid var(--darkerColor);
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer a {
+    color:var(--lighterColor);
+}
+footer a:hover{
+    text-decoration: none;
+    color: var(--lightColor);
+}
+
+input, textarea, label, button {
+    display:block;
+    margin:10px;
+    resize: none;
+    font-size: 0.8rem;
+}
+
+button{
+    width:100px;
+    position:relative;
+    cursor: pointer;
+}
+
+label, button {
+    font-size: 1rem;
+}
+.home{
+    width:100px;
+    position:relative;
+    display:inline-block;
+    text-decoration: none;
+}

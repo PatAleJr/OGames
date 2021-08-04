@@ -6,9 +6,6 @@
     --lightColor: rgb(119, 220, 245);
     --darkerColor: rgb(2, 30, 41); 
 
-    --panelWidth: 300px;
-    --panelHeight: 320px;
-
     box-sizing: border-box;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,7 +19,6 @@
     width: 100%;
     background: var(--lightColor);
 
-    text-align: center;
     justify-content: center;
     align-items: center;
 
@@ -57,40 +53,32 @@
 
 .main{
     width:100%;
-    height: 900px;
     background:var(--lightColor);
     border-top: 8px solid var(--darkColor);
 
-    padding:30px;
+    padding: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
-@media screen and (max-width: 1531px)
-{
-    .main{ height:1600px; }
-}
-@media screen and (max-width: 1167px)
-{
-    .main{ height:1600px; }
-}
-@media screen and (max-width: 802px) {
-    .main{ height:2800px; }   
+.games{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
 }
 
 .panel{
-    /* Distance between other game things */
     margin: 30px; 
-    /* Distance between edges and elements inside */
     padding: 15px;
 
-    width: var(--panelWidth);
-    height: var(--panelHeight);
+    width: 230px;
+    height: 260px;
 
     background: var(--lighterColor);
     border: 4px solid var(--darkColor);
-    border-radius: 1em;
-
-    display: inline-block;
-
+    border-radius: 12px;
     box-shadow: 4px -4px 10px var(--darkColor);
 
     transition: all 0.2s ease;
@@ -104,23 +92,31 @@
 }
 
 .gameImage {
-    border-radius: 1em;
-    box-sizing: border-box;
+    border-radius: 12px;
     border: 3px solid var(--darkColor);
-    
-    width:260px;
-    height: 200px;
+    display: flex;
+
+    width:195px;
+    height: 150px;
 }
 
 .gameTitle{
-    margin: 5px;
+    margin: 8px;
     text-align: center;
+    font-size: 18px;
+}
+
+.panel p {
+    font-size: 14px;
 }
 
 .footer{
-    box-sizing: border-box;
     padding: 30px;
-    height:300px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+
     background: var(--darkColor);
     border-top: 8px solid var(--darkerColor);
     color: white;
@@ -130,6 +126,8 @@
 
 .footer a {
     color:var(--lighterColor);
+    display:inline-block;
+    width:100px;
 }
 .footer a:hover{
     text-decoration: none;
