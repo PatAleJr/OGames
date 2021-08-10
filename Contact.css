@@ -12,7 +12,6 @@
 }
 
 header{
-
     height: 20vh;
     width: 100%;
 
@@ -34,13 +33,12 @@ header{
 
 .main{
     width:100%;
-
-    background:var(--lightColor);
-
     padding:30px;
 
     display: flex;
     flex-direction: column;
+    
+    background:var(--lightColor);
 }
 
 footer{
@@ -58,7 +56,6 @@ footer a {
 }
 footer a:hover{
     text-decoration: none;
-    color: var(--lightColor);
 }
 
 input, textarea, label, button {
@@ -68,18 +65,12 @@ input, textarea, label, button {
     font-size: 0.8rem;
 }
 
-button{
+label, button{
     width:100px;
-    position:relative;
     cursor: pointer;
-}
-
-label, button {
     font-size: 1rem;
 }
-.home{
-    width:100px;
-    position:relative;
-    display:inline-block;
+
+.cancelButton{
     text-decoration: none;
 }
