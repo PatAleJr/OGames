@@ -71,6 +71,6 @@ label, button{
     font-size: 1rem;
 }
 
-.cancelButton{
+.cancelButton, .home{
     text-decoration: none;
 }
