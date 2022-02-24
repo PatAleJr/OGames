@@ -44,8 +44,9 @@ header{
 
 .background{
     position: fixed;
-    top:0;
-    left:0;
+
+    top:-135px;
+    left:-240px;
     z-index:-100;
 
     display: grid;
