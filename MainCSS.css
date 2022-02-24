@@ -31,21 +31,39 @@ header{
 }
 
 .colorOverlay{
-    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
     z-index: 0;
+}
+
+.background{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-100;
+
+    display: grid;
+    grid-template-columns: 480px 480px 480px 480px;
+    grid-template-rows: 270px 270px 270px 270px;
+}
+
+.games{
+    width: 100%;
+    height: 100%;
 
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: left;
-}
 
-.games{
-    background:url("./Images/AllMyGames.png");
-    background-attachment: fixed;
-    background-repeat: round;
+    position: relative;
+    z-index: 200;
 }
 
 .panel{
@@ -64,7 +82,6 @@ header{
 
     text-decoration:none;
     color: black;
-    z-index: 1;
 }
 
 .panel:hover{
@@ -97,19 +114,19 @@ header{
     display: flex;
     flex-direction: column;
 
-    background: var(--darkColor);
-    border-top: 8px solid var(--darkerColor);
-    color: white;
+    background: var(--lightColor);
+    border-top: 8px solid var(--darkColor);
+    color: var(--darkerColor);
 
     font-family: 'Times New Roman', Times, serif;
 }
 
 .footer a {
-    color:var(--lighterColor);
+    color:var(--darkColor);
     display:inline-block;
     width:100px;
 }
 .footer a:hover{
     text-decoration: none;
-    color: var(--lightColor);
+    color: whitesmoke;
 }
