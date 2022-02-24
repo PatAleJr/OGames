@@ -30,42 +30,22 @@ header{
     
 }
 
-.background{
-    background:url("./Images/AllMyGames.png");
-
-    background-attachment: fixed;
-    background-repeat: round;
-
-    width:100%;
-    height:calc(100vh - 150px);
-    position:relative;
-    z-index: 0;
-}
-
 .colorOverlay{
-    background: rgba(0,0,0,0.2);
-    position:absolute;
-    width:100%;
-    height:100%;
-    z-index: 1;
-}
-
-.main{
-    width:100%;
-    background:var(--lightColor);
-    border-top: 8px solid var(--darkColor);
-
-    padding: 5vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-
-.games{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: left;
+}
+
+.games{
+    background:url("./Images/AllMyGames.png");
+    background-attachment: fixed;
+    background-repeat: round;
 }
 
 .panel{
@@ -84,6 +64,7 @@ header{
 
     text-decoration:none;
     color: black;
+    z-index: 1;
 }
 
 .panel:hover{
