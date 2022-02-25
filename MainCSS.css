@@ -11,6 +11,38 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.homeButton{
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    width:15%;
+}
+button {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin: 0;
+
+    border: 4px solid var(--darkColor);
+    background: var(--lighterColor);
+    border-radius: 1rem;
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--darkerColor);
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transition: transform 150ms ease;
+}
+button:hover,
+button:focus {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(1);
+}
+
 header{
     display: flex;
 
@@ -26,8 +58,7 @@ header{
     font-weight: bold;
     color: var(--darkColor);
 
-    border-bottom: 8px solid var(--darkColor);
-    
+    border-bottom: 8px solid var(--darkColor); 
 }
 
 .colorOverlay{
@@ -46,7 +77,7 @@ header{
     position: fixed;
 
     top:-135px;
-    left:-240px;
+    left: 0px;
     z-index:-100;
 
     display: grid;
