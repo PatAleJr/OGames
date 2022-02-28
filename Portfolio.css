@@ -32,19 +32,16 @@ header{
     border-bottom: 8px solid var(--darkColor);
 }
 
-/* must have z-index higher than title */
 .homeButton{
     display: inline-block;
     width:15%;
     z-index:5;
 }
-
 .title{
     display: inline-block;
     width:80%;
     transform: translate(calc(20% / -2));
 }
-
 
 button {
     box-sizing: border-box;
@@ -74,6 +71,41 @@ button:active {
 
 .main{
     background: var(--lightColor);
+    padding: 2%;
+}
+
+.me {
+    position: relative;
+}
+.main-text{
+    width: 60%;
+    display: inline-block;
+}
+
+.links{
+    border: var(--darkColor) 4px solid;
+    background: var(--lighterColor);
+    padding: 1%;
+
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 35%;
+
+    text-align: center;
+    line-height: 2em;
+}
+.links ul {
+    list-style-type: none;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+h2, h3{
+    text-align: center;
+    line-height: 2em;
 }
 
 footer{
