@@ -37,7 +37,7 @@ header{
     width:15%;
     z-index:5;
     position: absolute;
-    left: 0px;
+    left: 32px;
 }
 .title{
     display: inline-block;
@@ -46,7 +46,7 @@ header{
 
 button {
     box-sizing: border-box;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     margin: 0;
 
     border: 4px solid var(--darkColor);
@@ -83,24 +83,6 @@ button:active {
     display: inline-block;
 }
 
-.links{
-    margin: 16px;
-    border: var(--darkColor) 4px solid;
-    background: var(--lighterColor);
-    padding-bottom: 1%;
-
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    width: 30%;
-
-    text-align: center;
-    line-height: 2em;
-}
-.links ul {
-    list-style-type: none;
-}
-
 p, a{
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -112,36 +94,47 @@ p, a{
 }
 
 .panels {
+    width: 100%;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 .panel {
     background: var(--lighterColor);
-    margin: 24px; 
+    margin: 16px; 
     padding: 14px;
 
-    width: calc(340px + 16px);
-    height: 540px;
+    width: calc(45%);
 
     background: var(--lighterColor);
     border: 4px solid var(--darkColor);
     border-radius: 12px;
 
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .panel img {
     border-radius: 12px;
     border: 4px solid black;
+    object-fit: cover;
+    width: 40%;
+}
+
+.panel-content {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .panel h2, .panel h4 {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 
-.panel p, .panel a {
+.panel p, .panel a, .panel h2, .panel h4 {
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
