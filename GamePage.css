@@ -48,7 +48,7 @@ header{
 
 button {
     box-sizing: border-box;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     margin: 0;
 
     border: 4px solid var(--darkColor);
@@ -58,7 +58,8 @@ button {
     text-align: center;
     text-decoration: none;
     color: var(--darkerColor);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 
     cursor: pointer;
 

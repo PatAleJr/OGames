@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/GamePage.css">
+
+    <!-- Overides certain properties depending on game -->
+    <style>
+        .background {
+            background-image: url("/EMAGSimulator/Screenshot.png");
+            background-size: cover;
+        }
+    </style>
+
+    <title> EMAG Simulator </title>
+    <link rel="icon" href="/Images/favicon.png">
+
+</head>
+
+<body>
+
+    <header id="top">
+        <div class="homeButton">
+            <a href="/Portfolio.html">
+                <button> Portfolio </button>
+            </a>
+        </div>
+        <h1 class="title"> EMAG Simulator </h1>
+    </header>
+
+    <div class="main">
+        <div class="background">
+            <div class="colorOverlay"> </div>
+        </div>
+
+        <div class="game" style="width:960px;height:600px">
+            <iframe mozallowfullscreen="true" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi"
+                frameborder="0" src="./index.html" msallowfullscreen="true" allowfullscreen="true"
+                webkitallowfullscreen="true" id="game_drop" allowtransparency="true"
+                style="min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="description">
+            <h1> EMAG Simulator </h1> <br> <br>
+
+            <div class="stats">
+                <div class="stat">
+                    <p> Simulation </p>
+                </div>
+                <div class="stat">
+                    <p> Electromagnetism </p>
+                </div>
+                <div class="stat">
+                    <p> Unity </p>
+                </div>
+            </div>
+
+            <br> <br>
+
+            <p>
+                <b> Controls: </b> <br>
+                Use left mouse button to pan the camera, right mouse button to rotate view. WASD or arrow keys to move the camera. Scroll wheel to zoom in and out.
+                Double right click to create a charge distribution. A menu will appear on the right to change the parameters of the charge. Click off of this menu to close it.
+                Clicking on a charge will display its menu again.
+                <br> <br>
+                <b> About: </b> <br> 
+                I started this project after taking my first electromagnetism course. The phenomena of electromagnetism fascinates me, but is challenging to understand
+                due to its intangibility. My objective was to make a VR simulation where you can create and manipulate charge distributions, and watch how electrical and magnetic fields change and 
+                affect the charges in real time.
+                <br><br>
+                Currently, this simulator only computes electric fields caused by point charges, and infinite and finite line charges. The fields do not yet apply forces on the charges. The white lines show the direction of electric field, and their thickness represent
+                field strength on a logscale. I use Heun's method to iteratively plot the field lines in an efficient manner. Optimizing my code was a challenge, because everything runs in real time.
+
+                <br><br> I've been working off and on this project for 2 years, coming back to it when I have the time. There are many bugs fix and features to add.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <h3> Patale Games </h3>
+        <br>
+        <p> Brought to you by PatAle</p> <br>
+        <a href="/contact.html"> Contact </a> <br>
+        <p> &copy; 2021 </p> <br>
+        <a href="#top"> Top of page </a>
+    </footer>
+
+
+</body>
+
+</html>
